@@ -16,7 +16,7 @@ print(m)
 #soal nomor 1c
 
 # soal nomor 1d
-data.frame(x = 0:5, prob = dgeom(x = 0:5, prob = p)) %>%
+data.frame(x = seq(0, 5, by=1), prob = dgeom(x = seq(0, 5, by=1), prob = p)) %>%
   mutate(Failures = ifelse(x == n, n, "other")) %>%
   ggplot(aes(x = factor(x), y = prob, fill = Failures)) +
   geom_col() +
@@ -32,3 +32,28 @@ data.frame(x = 0:5, prob = dgeom(x = 0:5, prob = p)) %>%
        y = "Peluang") 
 
 hist(dgeom(n, p))
+
+
+# soal nomor 1d
+# menentukan nilai rataan dan variance dari distrbusi geometrik
+## rataan pada distribusi geomterik: 1/p
+## variance pada distribusi geometrik: (1-p)/p^2
+p <- 0.20
+rataan = (1/p)
+varian = ((1-p)/p^2)
+print(paste("rataan: ", as.character(rataan)))
+print(paste("varian: ", as.character(varian)))
+
+# soal nomor 2a
+## diketahui 20 pasien menderita covid dan peluang sembuh adalah 0.2
+## terdapat 4 pasien sembuh
+n = 20
+p = 0.2
+x = 4
+print(paste("Peluang 4 pasien sembuh: ", as.character(dbinom(x, n, p))))
+
+# soal nomor 2b
+data <- rbinom(20, n, p)
+hist(data, 
+     xlim = c(0,8))
+
