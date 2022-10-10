@@ -44,3 +44,6 @@ output pada percobaan kedua:
 0.1036
 ```
 
+#### c) Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
+> pada subsoal a didapatkan nilai yang konstan dan tidak berubah sedangkan pada subsoal b didapatkan nilai yang berubah-ubah. Hal tersebut menunjukkan bahwa distribusi geometrik pada a sama dan distribusi geometrik pada b acak
+
