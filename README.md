@@ -56,3 +56,26 @@ output pada percobaan kedua:
 #### c) Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
 > pada subsoal a didapatkan nilai yang konstan dan tidak berubah sedangkan pada subsoal b didapatkan nilai yang berubah-ubah. Hal tersebut menunjukkan bahwa distribusi geometrik pada a sama dan distribusi geometrik pada b acak
 
+### d) Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
+code:
+```
+library(ggplot2)
+library(dplyr)
+
+data.frame(x = 0:5, prob = dgeom(x = 0:5, prob = p)) %>%
+  mutate(Failures = ifelse(x == n, n, "other")) %>%
+  ggplot(aes(x = factor(x), y = prob, fill = Failures)) +
+  geom_col() +
+  geom_text(
+    aes(label = round(prob,2), y = prob + 0.01),
+    position = position_dodge(0.9),
+    size = 3,
+    vjust = 0
+  ) +
+  labs(title = "Probabilitas dari x = 3 gagal sebelum sukses pertama",
+       subtitle = "Distribusi Geometrik",
+       x = "Kegagalan sebelum sukses pertama (x)",
+       y = "Peluang") 
+```
+output:
+![1d](documentation/1d.png)
