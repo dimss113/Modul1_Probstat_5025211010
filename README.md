@@ -134,3 +134,23 @@ plot(x, dbinom(x, n, p),
 output:
 
 ![2b](documentation/2b.png)
+
+
+#### c) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Binomial.
+- rataan (μ) pada distribusi binomial dapat dicari dengan rumus n*p
+- varian (σ²) pada distribusi binomial dapat dicari dengan rumus n*p*(1-p)
+code :
+```
+n <- 20
+p <- 0.2
+rataan = n*p
+varian = n*p*(1-p)
+print(paste("rataan distribusi binomial(µ): ", rataan))
+print(paste("varian distribusi binomial(s²): ", varian))
+```
+
+output:
+```
+"rataan distribusi binomial(µ):  4"
+"varian distribusi binomial(s²):  3.2"
+```
