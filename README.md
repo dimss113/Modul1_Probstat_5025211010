@@ -377,3 +377,8 @@ plot(z_scores, type = 'o', col = "darkmagenta")
 output :
 
 ![6a](documentation/6a.png)
+
+### b) Generate Histogram dari Distribusi Normal dengan breaks 50 dan format penamaan: 
+- NRP_Nama_Probstat_{Nama Kelas}_DNhistogram
+Contoh :
+- 312312312_Rola_Probstat_A_DNhistogram
