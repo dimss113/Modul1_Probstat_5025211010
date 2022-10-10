@@ -116,3 +116,21 @@ output:
 ```
 "Peluang 4 pasien sembuh:  0.218199401946101"
 ```
+
+#### b) Gambarkan grafik histogram berdasarkan kasus tersebut.
+> menentukan distribusi binomial dalam bentuk grafik histogram 
+
+```
+n <- 20
+p <- 0.2
+x <- array(0:20)
+plot(x, dbinom(x, n, p),
+     type="h",
+     main="Distribusi Binomial",
+     ylab = "Probabilitas"
+     )
+```
+
+output:
+
+![2b](documentation/2b.png)
