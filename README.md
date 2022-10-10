@@ -273,3 +273,24 @@ output :
 "rataan distribusi chi-squre:  10"
 "varian distribusi chi-square:  20"
 ```
+
+## Soal 5 (Distribusi Eksponensial)
+### Diketahui bilangan acak (random variable) berdistribusi exponential (λ = 3). Tentukan
+
+### a) Fungsi Probabilitas dari Distribusi Exponensial 
+Dalam menentukan probabilitas dari distribusi eksponensial kita dapat menggunakan fungsi dexp dengan 2 parameter:
+- x => menyatakan x-values untuk exp function
+- rate => represents the shapex.
+
+code :
+Pada soal hanya diketahui rate nya saja yaitu 3 sehingga kita perlu membuat vector dari x nya yaitu dari 1 hingga 10 dengan kenaikan nilai sebanyak 0.1
+```
+rate <- 3
+x_dexp = seq(1, 10, by = 0.1)
+y_dexp = dexp(x_dexp, rate)
+plot(y_dexp)
+```
+
+output :
+
+![5a](documentation/5a.png)
