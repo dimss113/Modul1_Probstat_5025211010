@@ -60,6 +60,7 @@ output pada percobaan kedua:
 
 ### d) Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
 code:
+Berikut merupakan generate berdasarkan peluangnya dengan menggunakan fungsi dgeom
 ```
 library(ggplot2)
 library(dplyr)
@@ -82,6 +83,17 @@ data.frame(x = 0:5, prob = dgeom(x = 0:5, prob = p)) %>%
 output:
 
 ![1d](documentation/1d.png)
+
+code :
+Berikut merupakan generate dengan distribusi acak menggunakan fungsi rgeom
+```
+x <- rgeom(1000, 0.20)
+hist(x, main = "Histogram Geometrik Distribution", labels = T, col = "lightgreen")
+```
+
+output:
+
+![1d2](documentation/1d2.png)
 
 ### e) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
 - formula dalam menentukan rataan di distribusi geometrik adalah (1/p).
@@ -125,6 +137,8 @@ output:
 ### b) Gambarkan grafik histogram berdasarkan kasus tersebut.
 > menentukan distribusi binomial dalam bentuk grafik histogram 
 
+code :
+menentukan peluangnya dan visualisasi dengan plot untuk x dari 0 hingga 20
 ```
 n <- 20
 p <- 0.2
@@ -139,6 +153,21 @@ plot(x, dbinom(x, n, p),
 output:
 
 ![2b](documentation/2b.png)
+
+code :
+histogram dengan random nilai 20 dan peluang 0.20
+```
+n <- 20
+size <- 20
+p <- 0.20
+x <- rbinom(n, size, p)
+hist(x, main = "Histogram Binomial Distribution", labels = T, col = "lightgreen")
+```
+
+output:
+
+![2b2](documentation/2b2.png)
+
 
 
 ### c) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Binomial.
@@ -409,4 +438,14 @@ sd <- 8
 varian = var(rnorm(n, rataan, sd))
 
 print(varian)
+```
+
+output:
+percobaan pertama
+```
+62.93885
+```
+percobaan kedua
+```
+68.46113
 ```
