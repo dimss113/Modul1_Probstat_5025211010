@@ -242,3 +242,16 @@ output :
 "probabilitas distribusi chi-square:  0.00766415502440505"
 ```
 
+### b) Histogram dari Distribusi Chi-Square dengan 100 data random
+code :
+```
+set.seed(2)
+n <- 100
+v <- 10
+x <- rchisq(n, v)
+hist(x, main="Histogram Chi-Square Distribution", labels = T, col = "orange")
+```
+
+output :
+
+![4b](documentation/4b.png)
