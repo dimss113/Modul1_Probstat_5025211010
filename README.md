@@ -98,3 +98,21 @@ output:
 "rataan: 5"
 "varian: 20"
 ```
+
+## Soal 2 (Distribusi Binomial)
+### Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2. Tentukan :
+
+#### a) Peluang terdapat 4 pasien yang sembuh.
+> Dalam menentukan peluang pada distribusi binomial dapat menggunakan fungsi dbinom dengan parameter x sebagai variable random, p sebagai peluang sukses, dan n sebagai total partisipan.
+
+code:
+```
+n = 20
+p = 0.2
+x = 4
+print(paste("Peluang 4 pasien sembuh: ", as.character(dbinom(x, n, p))))
+```
+output:
+```
+"Peluang 4 pasien sembuh:  0.218199401946101"
+```
