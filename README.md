@@ -382,3 +382,18 @@ output :
 - NRP_Nama_Probstat_{Nama Kelas}_DNhistogram
 Contoh :
 - 312312312_Rola_Probstat_A_DNhistogram
+
+code :
+```
+n <- 100
+rataan <- 50
+sd <- 8
+x <- rnorm(n,rataan,sd)
+hist(x,
+     breaks = 50,
+     main = "5025211010_Dimas Fadilah Akbar_Probstat_A_DNhistogram", col = "darkmagenta", labels = T)
+```
+
+output:
+
+![6b](documentation/6b.png)
