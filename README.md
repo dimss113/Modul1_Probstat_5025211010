@@ -255,3 +255,21 @@ hist(x, main="Histogram Chi-Square Distribution", labels = T, col = "orange")
 output :
 
 ![4b](documentation/4b.png)
+
+### c) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Chi-Square.
+- rataan (μ) pada distribusi chi-square dapat dicari dengan nilai v
+- varian (σ²) pada distribusi chi-square dapat dicari dengan rumus 2v
+
+code :
+```
+rataan = v
+varian = 2*v
+print(paste("rataan distribusi chi-squre: ", rataan))
+print(paste("varian distribusi chi-square: ", varian))
+```
+
+output :
+```
+"rataan distribusi chi-squre:  10"
+"varian distribusi chi-square:  20"
+```
