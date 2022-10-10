@@ -324,3 +324,25 @@ output:
 ![5b3](documentation/5b3.png)
 ![5b4](documentation/5b4.png)
 
+### c) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Exponensial untuk n = 100 dan λ = 3
+Petunjuk: 
+- Gunakan set.seed(1)
+- Gunakan fungsi bawaan R
+
+code :
+```
+n <- 100
+rate <- 3
+set.seed(1)
+rataan = mean(rexp(n, rate))
+varian = sd(rexp(n, rate)) ^ 2
+print(paste("Rataan distribusi eksponensial: ", rataan))
+print(paste("Varian distribusi eksponensial: ", varian))
+```
+
+output:
+```
+"Rataan distribusi eksponensial:  0.343558812019206"
+"Varian distribusi eksponensial:  0.0656076521452312"
+```
+
