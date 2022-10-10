@@ -162,4 +162,11 @@ z_scores = (data - data_mean) / sd(data)
 
 plot(z_scores, type = 'o', col = "darkmagenta")
 
-
+# soal nomor 6b
+n <- 100
+rataan <- 50
+sd <- 8
+x <- rnorm(n,rataan,sd)
+hist(x,
+     breaks = 50,
+     main = "5025211010_Dimas Fadilah Akbar_Probstat_A_DNhistogram", col = "darkmagenta", labels = T)
