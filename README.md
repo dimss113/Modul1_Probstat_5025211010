@@ -78,4 +78,5 @@ data.frame(x = 0:5, prob = dgeom(x = 0:5, prob = p)) %>%
        y = "Peluang") 
 ```
 output:
+
 ![1d](documentation/1d.png)
