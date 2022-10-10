@@ -82,8 +82,9 @@ output:
 ![1d](documentation/1d.png)
 
 #### e) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
-> formula dalam menentukan rataan di distribusi geometrik adalah (1/p).
-> formula dalam menentuka varian di distribusi geomtrik adalah (1-p)/p^2
+- formula dalam menentukan rataan di distribusi geometrik adalah (1/p).
+- formula dalam menentuka varian di distribusi geomtrik adalah (1-p)/p^2
+
 code: 
 ```
 p <- 0.20
