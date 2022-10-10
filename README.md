@@ -5,3 +5,5 @@
 ## Instalasi Library Rlab
 > pada praktikum ini akan menggunakan fungsi-fungsi yang tersedia pada library Rlab. Untuk itu perlu melakukan instalasi dengan mengetikkan code berikut pada console di RStudio
 ```
+install.packages("Rlab")
+```
