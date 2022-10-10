@@ -1,5 +1,5 @@
 # Praktikum Probabilitas Statistik Modul 1
-**<br>Dimas Fadilah Akbar_5025201238**
+**<br>Dimas Fadilah Akbar_5025211010**
 **<br>Kelas Probstat A**
 
 ## Requirement
