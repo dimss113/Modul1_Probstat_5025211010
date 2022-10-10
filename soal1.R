@@ -138,3 +138,28 @@ hist(x2, main = "Histogram Chi-Square Distribution for n = 100", labels = T, col
 hist(x3, main = "Histogram Chi-Square Distribution for n = 1000", labels = T, col = "lightblue")
 hist(x4, main = "Histogram Chi-Square Distribution for n = 10000", labels = T, col = "lightblue")
 
+# soal nomor 5c
+## menentukan nilai rataan dan varian untuk n = 100 dan rate = 3
+n <- 100
+rate <- 3
+set.seed(1)
+rataan = mean(rexp(n, rate))
+varian = sd(rexp(n, rate)) ^ 2
+print(varian2)
+print(paste("Rataan distribusi eksponensial: ", rataan))
+print(paste("Varian distribusi eksponensial: ", varian))
+
+# soal nomor 6a
+n <- 100
+rataan <- 50
+sd <- 8
+data_mean = mean(rnorm(n, rataan, sd))
+data = rnorm(n, rataan, sd)
+x1 = floor(data_mean)
+x2 = ceiling(data_mean)
+
+z_scores = (data - data_mean) / sd(data)
+
+plot(z_scores, type = 'o', col = "darkmagenta")
+
+
