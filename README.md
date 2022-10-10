@@ -155,3 +155,24 @@ output:
 "rataan distribusi binomial(µ):  4"
 "varian distribusi binomial(s²):  3.2"
 ```
+
+## Soal 3 (Distribusi Poisson)
+### Diketahui data dari  sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis 4,5 bayi lahir di rumah sakit ini setiap hari. (gunakan Distribusi Poisson)
+
+#### a) Berapa peluang bahwa 6 bayi akan lahir di rumah sakit ini besok?
+Dalam menentukan peluang pada distribusi poisson dapat menggunakan fungsi dpois dengan dua parameter yaitu:
+- x => menyatakan banyaknya sukses yang terjadi
+- lambda => menyatakan rata-rata banyaknya sukses yang terjadi pada interval waktu atau daerah tertentu
+
+code :
+```
+x <- 6
+lambda <- 4.5
+peluang = dpois(x, lambda)
+print(paste("probabilitas distribusi poisson 6 bayi lahir: ", peluang))
+```
+
+output:
+```
+"probabilitas distribusi poisson 6 bayi lahir:  0.128120143864584"
+```
