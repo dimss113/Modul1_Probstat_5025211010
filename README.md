@@ -56,7 +56,7 @@ output pada percobaan kedua:
 #### c) Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
 > pada subsoal a didapatkan nilai yang konstan dan tidak berubah sedangkan pada subsoal b didapatkan nilai yang berubah-ubah. Hal tersebut menunjukkan bahwa distribusi geometrik pada a sama dan distribusi geometrik pada b acak
 
-### d) Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
+#### d) Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
 code:
 ```
 library(ggplot2)
@@ -80,3 +80,20 @@ data.frame(x = 0:5, prob = dgeom(x = 0:5, prob = p)) %>%
 output:
 
 ![1d](documentation/1d.png)
+
+#### e) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
+> formula dalam menentukan rataan di distribusi geometrik adalah (1/p).
+> formula dalam menentuka varian di distribusi geomtrik adalah (1-p)/p^2
+code: 
+```
+p <- 0.20
+rataan = (1/p)
+varian = ((1-p)/p^2)
+print(paste("rataan: ", as.character(rataan)))
+print(paste("varian: ", as.character(varian)))
+```
+output:
+```
+"rataan: 5"
+"varian: 20"
+```
