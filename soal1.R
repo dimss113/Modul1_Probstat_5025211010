@@ -59,5 +59,30 @@ plot(x, dbinom(x, n, p),
      type="h",
      main="Distribusi Binomial",
      ylab = "Probabilitas"
-     )
+)
 
+# soal nomor 2c
+## menentukan nilai rataan distribusi binomial dengan rumus n*p
+n <- 20
+p <- 0.2
+rataan = n*p
+varian = n*p*(1-p)
+print(paste("rataan distribusi binomial(µ): ", rataan))
+print(paste("varian distribusi binomial(s²): ", varian))
+rataan = n*p
+
+
+# soal nomor 3a
+## menentukan peluang banyakanya 6 bayi yang lahir di rumah sakit jika rata-rata tiap hari adalah 4.5
+x <- 6
+lambda <- 4.5
+peluang = dpois(x, lambda)
+print(paste("probabilitas distribusi poisson 6 bayi lahir: ", peluang))
+
+# soal nomor 3b
+## buat histogram peluang kelahiran 6 bayi selama setahun (n=365)
+set.seed(2)
+n <-365
+lambda <- 4.5
+x <- rpois(n, lambda)
+hist(x,main="Histogram Poisson Distribution",labels=T, col = "orange")
