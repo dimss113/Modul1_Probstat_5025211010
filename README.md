@@ -397,3 +397,16 @@ hist(x,
 output:
 
 ![6b](documentation/6b.png)
+
+
+### c) Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.
+
+code :
+```
+n <- 100
+rataan <- 50
+sd <- 8
+varian = var(rnorm(n, rataan, sd))
+
+print(varian)
+```
