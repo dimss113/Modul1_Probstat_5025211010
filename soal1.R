@@ -86,3 +86,24 @@ n <-365
 lambda <- 4.5
 x <- rpois(n, lambda)
 hist(x,main="Histogram Poisson Distribution",labels=T, col = "orange")
+
+# soal nomor 3d
+lambda <- 4.5
+rataan = lambda
+varian = lambda
+print(paste("rataan distribusi poisson: ", rataan))
+print(paste("varian distribusi poisson: ", varian))
+
+# soal nomor 4a
+## fungsi probabilitas distribusi Chi-Square.
+x <- 2
+v <- 10
+print(paste("probabilitas distribusi chi-square: ", dchisq(x, v)))
+
+# soal nomor 4b
+## buatlah histogram dengan n = 100
+set.seed(2)
+n <- 100
+v <- 10
+x <- rchisq(n, v)
+hist(x, main="Histogram Chi-Square Distribution", labels = T, col = "orange")
