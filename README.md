@@ -19,7 +19,7 @@ install.packages("ggplot2")
 
 ## Soal 1 (Distribusi Geometrik)
 
-#### a) Berapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara vaksinasi  sebelum keberhasilan pertama ketika p = 0,20 dari populasi menghadiri acara vaksinasi ?
+### a) Berapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara vaksinasi  sebelum keberhasilan pertama ketika p = 0,20 dari populasi menghadiri acara vaksinasi ?
 dalam menyelesaikan soal tersebut dapat menggunakan fungsi dgeom khusus untuk distribusi geometrik
 ```
 n = 3
@@ -33,9 +33,11 @@ output:
 0.1024
 ```
 
-#### b) mean Distribusi Geometrik dengan 10000 data random , prob = 0,20 dimana distribusi geometrik acak tersebut X = 3?
-> dalam menentukan distribusi geometriknya dapat menggunakan fungsi rgeom 
-> dalam menentukan mean dari distribusi geometrik dapat menggunakan fungsi mean
+### b) mean Distribusi Geometrik dengan 10000 data random , prob = 0,20 dimana distribusi geometrik acak tersebut X = 3?
+- dalam menentukan distribusi geometriknya dapat menggunakan fungsi rgeom 
+- dalam menentukan mean dari distribusi geometrik dapat menggunakan fungsi mean
+
+code :
 ```
 rand <- 10000
 p <- 0.20
@@ -53,10 +55,10 @@ output pada percobaan kedua:
 0.1036
 ```
 
-#### c) Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
+### c) Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
 > pada subsoal a didapatkan nilai yang konstan dan tidak berubah sedangkan pada subsoal b didapatkan nilai yang berubah-ubah. Hal tersebut menunjukkan bahwa distribusi geometrik pada a sama dan distribusi geometrik pada b acak
 
-#### d) Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
+### d) Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
 code:
 ```
 library(ggplot2)
@@ -81,7 +83,7 @@ output:
 
 ![1d](documentation/1d.png)
 
-#### e) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
+### e) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.
 - formula dalam menentukan rataan di distribusi geometrik adalah (1/p).
 - formula dalam menentuka varian di distribusi geomtrik adalah (1-p)/p^2
 
@@ -102,8 +104,11 @@ output:
 ## Soal 2 (Distribusi Binomial)
 ### Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2. Tentukan :
 
-#### a) Peluang terdapat 4 pasien yang sembuh.
-> Dalam menentukan peluang pada distribusi binomial dapat menggunakan fungsi dbinom dengan parameter x sebagai variable random, p sebagai peluang sukses, dan n sebagai total partisipan.
+### a) Peluang terdapat 4 pasien yang sembuh.
+Dalam menentukan peluang pada distribusi binomial dapat menggunakan fungsi dbinom dengan 3 parameter yaitu:
+- x menyatakan sukses
+- p sebagai peluang sukses
+- n sebagai total partisipan.
 
 code:
 ```
@@ -117,7 +122,7 @@ output:
 "Peluang 4 pasien sembuh:  0.218199401946101"
 ```
 
-#### b) Gambarkan grafik histogram berdasarkan kasus tersebut.
+### b) Gambarkan grafik histogram berdasarkan kasus tersebut.
 > menentukan distribusi binomial dalam bentuk grafik histogram 
 
 ```
@@ -136,7 +141,7 @@ output:
 ![2b](documentation/2b.png)
 
 
-#### c) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Binomial.
+### c) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Binomial.
 - rataan (μ) pada distribusi binomial dapat dicari dengan rumus n*p
 - varian (σ²) pada distribusi binomial dapat dicari dengan rumus n*p*(1-p)
 
@@ -159,7 +164,7 @@ output:
 ## Soal 3 (Distribusi Poisson)
 ### Diketahui data dari  sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis 4,5 bayi lahir di rumah sakit ini setiap hari. (gunakan Distribusi Poisson)
 
-#### a) Berapa peluang bahwa 6 bayi akan lahir di rumah sakit ini besok?
+### a) Berapa peluang bahwa 6 bayi akan lahir di rumah sakit ini besok?
 Dalam menentukan peluang pada distribusi poisson dapat menggunakan fungsi dpois dengan dua parameter yaitu:
 - x => menyatakan banyaknya sukses yang terjadi
 - lambda => menyatakan rata-rata banyaknya sukses yang terjadi pada interval waktu atau daerah tertentu
@@ -177,7 +182,7 @@ output:
 "probabilitas distribusi poisson 6 bayi lahir:  0.128120143864584"
 ```
 
-#### b) simulasikan dan buatlah histogram kelahiran 6 bayi akan lahir di rumah sakit ini  selama setahun (n = 365)
+### b) simulasikan dan buatlah histogram kelahiran 6 bayi akan lahir di rumah sakit ini  selama setahun (n = 365)
 dalam menentukan frekuensi banyaknya bayi yang lahir dalam jangka waktu 365 hari kita dapat menggunakan fungsi rpois dengan dua parameter:
 - n => inverval waktu atau daerah
 - lambda => rata-rata banyaknya sukses pada interval waktu atau daerah tertentu
@@ -195,12 +200,12 @@ output:
 
 ![3b](documentation/3b.png)
 
-#### c) dan bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
+### c) dan bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
 > apabila peluang yang didapatkan pada point a dikalikan dengan interval waktunya yaitu 365 maka akan didapatkan hasil yang hampir sama. Yang artinya peluang lahirnya bayi pada interval waktu 365 hari tidak jauh dari peluang distribusi poissonnya dalam pada interval satu hari.
 
-#### d) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson.
+### d) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson.
 - rataan (μ) pada distribusi poisson merupakan lambda
-- varian (σ²)pada distribusi poisson juga merupakan lambda
+- varian (σ²) pada distribusi poisson juga merupakan lambda
 
 code :
 ```
@@ -216,3 +221,9 @@ output:
 "rataan distribusi poisson:  4.5"
 "varian distribusi poisson:  4.5"
 ```
+
+## Soal 4 (Distribusi Chi-Square)
+### Diketahui nilai x = 2 dan v = 10. Tentukan:
+
+### a) Fungsi Probabilitas dari Distribusi Chi-Square.
+
