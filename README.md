@@ -294,3 +294,33 @@ plot(y_dexp)
 output :
 
 ![5a](documentation/5a.png)
+
+### b) Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random
+Dalam membuat distribusi eksponensial untuk bilangan jumlah bil random yang telah ditentukan kita dapat menggunakan fungsi rexp dengan dua parameter:
+- n => banyak bilangan random
+- rate => represents the shapex
+
+code :
+```
+rate <- 3
+n1 <- 10
+n2 <- 100
+n3 <- 1000
+n4 <- 10000
+x1 = rexp(n1, rate)
+x2 = rexp(n2, rate)
+x3 = rexp(n3, rate)
+x4 = rexp(n4, rate)
+hist(x1, main = "Histogram Chi-Square Distribution for n = 10", labels = T, col = "lightblue")
+hist(x2, main = "Histogram Chi-Square Distribution for n = 100", labels = T, col = "lightblue")
+hist(x3, main = "Histogram Chi-Square Distribution for n = 1000", labels = T, col = "lightblue")
+hist(x4, main = "Histogram Chi-Square Distribution for n = 10000", labels = T, col = "lightblue")
+```
+
+output:
+
+![5b1](documentation/5b1.png)
+![5b2](documentation/5b2.png)
+![5b3](documentation/5b3.png)
+![5b4](documentation/5b4.png)
+
