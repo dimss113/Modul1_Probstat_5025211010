@@ -226,4 +226,19 @@ output:
 ### Diketahui nilai x = 2 dan v = 10. Tentukan:
 
 ### a) Fungsi Probabilitas dari Distribusi Chi-Square.
+Dalam menentukan probabilitas dari distribusi chi-square kita dapat menggunakan fungsi dchisq dengan dua parameter yaitu:
+- x => variable peubah acak kontinu
+- v => derajat bebas
+
+code :
+```
+x <- 2
+v <- 10
+print(paste("probabilitas distribusi chi-square: ", dchisq(x, v)))
+```
+
+output :
+```
+"probabilitas distribusi chi-square:  0.00766415502440505"
+```
 
