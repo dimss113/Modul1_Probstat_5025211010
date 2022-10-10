@@ -139,6 +139,7 @@ output:
 #### c) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Binomial.
 - rataan (μ) pada distribusi binomial dapat dicari dengan rumus n*p
 - varian (σ²) pada distribusi binomial dapat dicari dengan rumus n*p*(1-p)
+
 code :
 ```
 n <- 20
