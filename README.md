@@ -7,9 +7,14 @@
 - RStudio
 
 ## Instalasi Library Rlab
-> pada praktikum ini akan menggunakan fungsi-fungsi yang tersedia pada library Rlab. Untuk itu perlu melakukan instalasi dengan mengetikkan code berikut pada console di RStudio
+- library Rlab
+- library dplyr
+- library ggplot
+> pada praktikum ini akan menggunakan fungsi-fungsi yang tersedia pada library Rlab, dplyr, dan ggplot. Untuk itu perlu melakukan instalasi dengan mengetikkan code berikut pada console di RStudio
 ```
 install.packages("Rlab")
+install.packages("dplyr")
+install.packages("ggplot2")
 ```
 
 ## Soal 1 (Distribusi Geometrik)
