@@ -31,7 +31,8 @@ data.frame(x = seq(0, 5, by=1), prob = dgeom(x = seq(0, 5, by=1), prob = p)) %>%
        x = "Kegagalan sebelum sukses pertama (x)",
        y = "Peluang") 
 
-hist(dgeom(n, p))
+x <- rgeom(1000, 0.20)
+hist(x, main = "Histogram Geometrik Distribution", labels = T, col = "lightgreen")
 
 
 # soal nomor 1d
@@ -54,12 +55,20 @@ print(paste("Peluang 4 pasien sembuh: ", as.character(dbinom(x, n, p))))
 
 # soal nomor 2b
 ## gambarkan grafik histogram berdasarkan kasus diatas
+n <- 20
+size <- 20
+p <- 0.20
+x <- rbinom(n, size, p)
+hist(x, main = "Histogram Binomial Distribution", labels = T, col = "lightgreen")
+
 x <- array(0:20)
 plot(x, dbinom(x, n, p),
      type="h",
      main="Distribusi Binomial",
      ylab = "Probabilitas"
 )
+
+
 
 # soal nomor 2c
 ## menentukan nilai rataan distribusi binomial dengan rumus n*p
@@ -170,3 +179,13 @@ x <- rnorm(n,rataan,sd)
 hist(x,
      breaks = 50,
      main = "5025211010_Dimas Fadilah Akbar_Probstat_A_DNhistogram", col = "darkmagenta", labels = T)
+
+# soal nomor 6c
+## menentukan varian dari distribusi normal yang telah digenerate
+n <- 100
+rataan <- 50
+sd <- 8
+varian = var(rnorm(n, rataan, sd))
+
+print(varian)
+
