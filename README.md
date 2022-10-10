@@ -6,7 +6,7 @@
 - R for windows
 - RStudio
 
-## Instalasi Library Rlab
+## Instalasi Library 
 - library Rlab
 - library dplyr
 - library ggplot
