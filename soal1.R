@@ -121,3 +121,20 @@ rate <- 3
 x_dexp = seq(1, 10, by = 0.1)
 y_dexp = dexp(x_dexp, rate)
 plot(y_dexp)
+
+# soal nomor 5b
+## histogram dari distribusi eksponensial untuk 10, 100, 1000, dan 10000 bil random
+rate <- 3
+n1 <- 10
+n2 <- 100
+n3 <- 1000
+n4 <- 10000
+x1 = rexp(n1, rate)
+x2 = rexp(n2, rate)
+x3 = rexp(n3, rate)
+x4 = rexp(n4, rate)
+hist(x1, main = "Histogram Chi-Square Distribution for n = 10", labels = T, col = "lightblue")
+hist(x2, main = "Histogram Chi-Square Distribution for n = 100", labels = T, col = "lightblue")
+hist(x3, main = "Histogram Chi-Square Distribution for n = 1000", labels = T, col = "lightblue")
+hist(x4, main = "Histogram Chi-Square Distribution for n = 10000", labels = T, col = "lightblue")
+
