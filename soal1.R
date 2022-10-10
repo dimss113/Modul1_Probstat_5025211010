@@ -53,7 +53,11 @@ x = 4
 print(paste("Peluang 4 pasien sembuh: ", as.character(dbinom(x, n, p))))
 
 # soal nomor 2b
-data <- rbinom(20, n, p)
-hist(data, 
-     xlim = c(0,8))
+## gambarkan grafik histogram berdasarkan kasus diatas
+x <- array(0:20)
+plot(x, dbinom(x, n, p),
+     type="h",
+     main="Distribusi Binomial",
+     ylab = "Probabilitas"
+     )
 
