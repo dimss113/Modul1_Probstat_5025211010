@@ -107,3 +107,17 @@ n <- 100
 v <- 10
 x <- rchisq(n, v)
 hist(x, main="Histogram Chi-Square Distribution", labels = T, col = "orange")
+
+# soal nomor 4c
+## menentukan rataan dan varian dari distribusi chi-square
+rataan = v
+varian = 2*v
+print(paste("rataan distribusi chi-squre: ", rataan))
+print(paste("varian distribusi chi-square: ", varian))
+
+# soal nomor 5a
+## fungsi probabilitas dari distribusi eksponensial
+rate <- 3
+x_dexp = seq(1, 10, by = 0.1)
+y_dexp = dexp(x_dexp, rate)
+plot(y_dexp)
