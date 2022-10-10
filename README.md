@@ -195,3 +195,24 @@ output:
 
 ![3b](documentation/3b.png)
 
+#### c) dan bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
+> apabila peluang yang didapatkan pada point a dikalikan dengan interval waktunya yaitu 365 maka akan didapatkan hasil yang hampir sama. Yang artinya peluang lahirnya bayi pada interval waktu 365 hari tidak jauh dari peluang distribusi poissonnya dalam pada interval satu hari.
+
+#### d) Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson.
+- rataan (μ) pada distribusi poisson merupakan lambda
+- varian (σ²)pada distribusi poisson juga merupakan lambda
+
+code :
+```
+lambda <- 4.5
+rataan = lambda
+varian = lambda
+print(paste("rataan distribusi poisson: ", rataan))
+print(paste("varian distribusi poisson: ", varian))
+```
+
+output:
+```
+"rataan distribusi poisson:  4.5"
+"varian distribusi poisson:  4.5"
+```
