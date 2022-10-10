@@ -176,3 +176,22 @@ output:
 ```
 "probabilitas distribusi poisson 6 bayi lahir:  0.128120143864584"
 ```
+
+#### b) simulasikan dan buatlah histogram kelahiran 6 bayi akan lahir di rumah sakit ini  selama setahun (n = 365)
+dalam menentukan frekuensi banyaknya bayi yang lahir dalam jangka waktu 365 hari kita dapat menggunakan fungsi rpois dengan dua parameter:
+- n => inverval waktu atau daerah
+- lambda => rata-rata banyaknya sukses pada interval waktu atau daerah tertentu
+
+code :
+```
+set.seed(2)
+n <-365
+lambda <- 4.5
+x <- rpois(n, lambda)
+hist(x,main="Histogram Poisson Distribution",labels=T, col = "orange")
+```
+
+output:
+
+![3b](documentation/3b.png)
+
