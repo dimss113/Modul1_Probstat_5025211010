@@ -358,3 +358,22 @@ Contoh data :
 - rata-rata = 5.083333
 - X1 = 5
 - X2 = 6
+
+code :
+```
+n <- 100
+rataan <- 50
+sd <- 8
+data_mean = mean(rnorm(n, rataan, sd))
+data = rnorm(n, rataan, sd)
+x1 = floor(data_mean)
+x2 = ceiling(data_mean)
+
+z_scores = (data - data_mean) / sd(data)
+
+plot(z_scores, type = 'o', col = "darkmagenta")
+```
+
+output :
+
+![6a](documentation/6a.png)
