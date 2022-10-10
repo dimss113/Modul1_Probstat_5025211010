@@ -11,3 +11,15 @@ install.packages("Rlab")
 ## Soal 1 (Distribusi Geometrik)
 
 ### a) Berapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara vaksinasi  sebelum keberhasilan pertama ketika p = 0,20 dari populasi menghadiri acara vaksinasi ?
+dalam menyelesaikan soal tersebut dapat menggunakan fungsi dgeom khusus untuk distribusi geometrik
+```
+n = 3
+p = 0.20
+output = dgeom(x = n, prob = p)
+print(output)
+```
+
+hasil:
+```
+0.1024
+```
