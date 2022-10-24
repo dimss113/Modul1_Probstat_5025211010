@@ -29,7 +29,7 @@ print(output)
 ```
 
 output:
-```
+```py
 0.1024
 ```
 
