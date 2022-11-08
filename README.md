@@ -11,7 +11,7 @@
 - library dplyr
 - library ggplot
 > pada praktikum ini akan menggunakan fungsi-fungsi yang tersedia pada library Rlab, dplyr, dan ggplot. Untuk itu perlu melakukan instalasi dengan mengetikkan code berikut pada console di RStudio
-```
+```r
 install.packages("Rlab")
 install.packages("dplyr")
 install.packages("ggplot2")
@@ -29,7 +29,7 @@ print(output)
 ```
 
 output:
-```py
+```
 0.1024
 ```
 
@@ -38,7 +38,7 @@ output:
 - dalam menentukan mean dari distribusi geometrik dapat menggunakan fungsi mean
 
 code :
-```
+```r
 rand <- 10000
 p <- 0.20
 m = mean(rgeom(n = rand, prob = p) == 3)
@@ -61,7 +61,7 @@ output pada percobaan kedua:
 ### d) Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
 code:
 Berikut merupakan generate berdasarkan peluangnya dengan menggunakan fungsi dgeom
-```
+```r
 library(ggplot2)
 library(dplyr)
 
@@ -86,7 +86,7 @@ output:
 
 code :
 Berikut merupakan generate dengan distribusi acak menggunakan fungsi rgeom
-```
+```r
 x <- rgeom(1000, 0.20)
 hist(x, main = "Histogram Geometrik Distribution", labels = T, col = "lightgreen")
 ```
@@ -100,7 +100,7 @@ output:
 - formula dalam menentuka varian di distribusi geomtrik adalah (1-p)/p^2
 
 code: 
-```
+```r
 p <- 0.20
 rataan = (1/p)
 varian = ((1-p)/p^2)
@@ -123,7 +123,7 @@ Dalam menentukan peluang pada distribusi binomial dapat menggunakan fungsi dbino
 - n sebagai total partisipan.
 
 code:
-```
+```r
 n = 20
 p = 0.2
 x = 4
@@ -139,7 +139,7 @@ output:
 
 code :
 menentukan peluangnya dan visualisasi dengan plot untuk x dari 0 hingga 20
-```
+```r
 n <- 20
 p <- 0.2
 x <- array(0:20)
@@ -156,7 +156,7 @@ output:
 
 code :
 histogram dengan random nilai 20 dan peluang 0.20
-```
+```r
 n <- 20
 size <- 20
 p <- 0.20
@@ -175,7 +175,7 @@ output:
 - varian (σ²) pada distribusi binomial dapat dicari dengan rumus n*p*(1-p)
 
 code :
-```
+```r
 n <- 20
 p <- 0.2
 rataan = n*p
@@ -199,7 +199,7 @@ Dalam menentukan peluang pada distribusi poisson dapat menggunakan fungsi dpois 
 - lambda => menyatakan rata-rata banyaknya sukses yang terjadi pada interval waktu atau daerah tertentu
 
 code :
-```
+```r
 x <- 6
 lambda <- 4.5
 peluang = dpois(x, lambda)
@@ -217,7 +217,7 @@ dalam menentukan frekuensi banyaknya bayi yang lahir dalam jangka waktu 365 hari
 - lambda => rata-rata banyaknya sukses pada interval waktu atau daerah tertentu
 
 code :
-```
+```r
 set.seed(2)
 n <-365
 lambda <- 4.5
@@ -237,7 +237,7 @@ output:
 - varian (σ²) pada distribusi poisson juga merupakan lambda
 
 code :
-```
+```r
 lambda <- 4.5
 rataan = lambda
 varian = lambda
@@ -260,7 +260,7 @@ Dalam menentukan probabilitas dari distribusi chi-square kita dapat menggunakan 
 - v => derajat bebas
 
 code :
-```
+```r
 x <- 2
 v <- 10
 print(paste("probabilitas distribusi chi-square: ", dchisq(x, v)))
@@ -273,7 +273,7 @@ output :
 
 ### b) Histogram dari Distribusi Chi-Square dengan 100 data random
 code :
-```
+```r
 set.seed(2)
 n <- 100
 v <- 10
@@ -290,7 +290,7 @@ output :
 - varian (σ²) pada distribusi chi-square dapat dicari dengan rumus 2v
 
 code :
-```
+```r
 rataan = v
 varian = 2*v
 print(paste("rataan distribusi chi-squre: ", rataan))
@@ -313,7 +313,7 @@ Dalam menentukan probabilitas dari distribusi eksponensial kita dapat menggunaka
 
 code :
 Pada soal hanya diketahui rate nya saja yaitu 3 sehingga kita perlu membuat vector dari x nya yaitu dari 1 hingga 10 dengan kenaikan nilai sebanyak 0.1
-```
+```r
 rate <- 3
 x_dexp = seq(1, 10, by = 0.1)
 y_dexp = dexp(x_dexp, rate)
@@ -330,7 +330,7 @@ Dalam membuat distribusi eksponensial untuk bilangan jumlah bil random yang tela
 - rate => represents the shapex
 
 code :
-```
+```r
 rate <- 3
 n1 <- 10
 n2 <- 100
@@ -359,7 +359,7 @@ Petunjuk:
 - Gunakan fungsi bawaan R
 
 code :
-```
+```r
 n <- 100
 rate <- 3
 set.seed(1)
@@ -389,7 +389,7 @@ Contoh data :
 - X2 = 6
 
 code :
-```
+```r
 n <- 100
 rataan <- 50
 sd <- 8
@@ -413,7 +413,7 @@ Contoh :
 - 312312312_Rola_Probstat_A_DNhistogram
 
 code :
-```
+```r
 n <- 100
 rataan <- 50
 sd <- 8
@@ -431,7 +431,7 @@ output:
 ### c) Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.
 
 code :
-```
+```r
 n <- 100
 rataan <- 50
 sd <- 8
